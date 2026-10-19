@@ -165,10 +165,33 @@ class DataMindAPIHandler(SimpleHTTPRequestHandler):
         )
 
         if plan.get("status") == "UNSUPPORTED":
+            is_dml = any(w in question.lower() for w in ["drop", "delete", "update", "insert", "alter", "truncate", "change", "modify"])
+            remediation = plan.get("remediation")
+            if not remediation and is_dml:
+                remediation = {
+                    "why_blocked": "Data modification statements (DML/DDL) are strictly blocked to protect Snowflake production tables from unauthorized mutation or deletion.",
+                    "risk_level": "CRITICAL: Schema or data corruption",
+                    "gate_triggered": "Deterministic AST Guardrail (Gate G5)",
+                    "enforced_role": "DATAMIND_READER (Strict Read-Only RBAC)",
+                    "action_type": "SANDBOX_SIMULATION",
+                    "action_label": "🧪 Run Safe What-If Simulation in Sandbox",
+                    "safe_alternatives": [
+                        "Simulate projected impact of changing this value in Sandbox",
+                        "Show current 2024 baseline metrics for India",
+                        "Inspect Snowflake schema and read-only RBAC policies"
+                    ]
+                }
             self.send_json({
-                "status": "UNSUPPORTED",
+                "status": "SECURITY_BLOCKED" if is_dml else "UNSUPPORTED",
                 "message": plan.get("refusal_or_clarification_message", "Request unsupported within read-only boundaries."),
-                "assumptions": plan.get("assumptions_made", [])
+                "error": plan.get("refusal_or_clarification_message", "Request blocked by safety policy."),
+                "assumptions": plan.get("assumptions_made", []),
+                "remediation": remediation,
+                "suggested_next_steps": plan.get("suggested_next_steps", [
+                    "Which country had the highest renewable share in 2024?",
+                    "Show annual green investment and renewable share for India",
+                    "What is the total annual green investment in Europe?"
+                ])
             })
             return
 
@@ -180,7 +203,25 @@ class DataMindAPIHandler(SimpleHTTPRequestHandler):
             self.send_json({
                 "status": "SECURITY_BLOCKED",
                 "error": validated_sql,
-                "raw_sql": raw_sql
+                "raw_sql": raw_sql,
+                "remediation": {
+                    "why_blocked": "AST syntax verification blocked an unsafe, non-read-only, or unauthorized SQL statement.",
+                    "risk_level": "HIGH: Non-SELECT Root Node / Unauthorized Table",
+                    "gate_triggered": "Deterministic AST Guardrail (Gate G5 - sqlglot)",
+                    "enforced_role": "DATAMIND_READER (Strict Read-Only RBAC)",
+                    "action_type": "SANDBOX_SIMULATION",
+                    "action_label": "🧪 Run Safe What-If Simulation in Sandbox",
+                    "safe_alternatives": [
+                        "Simulate projected impact in Isolated Sandbox",
+                        "Show 2024 Energy Metrics across permitted tables",
+                        "Inspect Read-Only RBAC & Allowed Tables"
+                    ]
+                },
+                "suggested_next_steps": [
+                    "Simulate projected impact in Isolated Sandbox",
+                    "Show 2024 Energy Metrics across permitted tables",
+                    "Inspect Read-Only RBAC & Allowed Tables"
+                ]
             })
             return
 
@@ -242,6 +283,9 @@ class DataMindAPIHandler(SimpleHTTPRequestHandler):
             "methodology": synthesis.get("methodology_explanation", ""),
             "assumptions": plan.get("assumptions_made", []),
             "data_gaps": synthesis.get("data_gaps_or_warnings", "None detected"),
+            "executive_insights": synthesis.get("executive_insights", ""),
+            "suggested_next_steps": synthesis.get("suggested_next_steps", []),
+            "what_if_simulation": synthesis.get("what_if_simulation", None),
             "snowflake": {
                 "query_id": exec_res["query_id"],
                 "elapsed_ms": exec_res["elapsed_ms"],

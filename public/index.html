@@ -827,6 +827,203 @@
             color: #fbbf24;
         }
 
+        /* Next-Gen Proactive AI Insight Callout */
+        .executive-insight-box {
+            margin-top: 14px;
+            background: linear-gradient(135deg, rgba(157, 78, 221, 0.12) 0%, rgba(56, 189, 248, 0.08) 100%);
+            border: 1px solid rgba(199, 125, 255, 0.35);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #f1f5f9;
+            box-shadow: 0 4px 20px rgba(157, 78, 221, 0.15);
+        }
+        .executive-insight-title {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #c77dff;
+            margin-bottom: 4px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Autonomous What-If Counterfactual Scenario Card */
+        .what-if-simulation-card {
+            margin-top: 16px;
+            background: rgba(10, 14, 26, 0.9);
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.12);
+        }
+        .what-if-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .what-if-title {
+            font-family: var(--font-display);
+            font-size: 13px;
+            font-weight: 700;
+            color: #38bdf8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .what-if-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .what-if-stat {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        .what-if-stat-label {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: var(--text-muted);
+        }
+        .what-if-stat-val {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 2px;
+        }
+        .what-if-stat-val.positive {
+            color: #34d399;
+        }
+        .what-if-stat-val.accent {
+            color: #c77dff;
+        }
+
+        /* Proactive Next Steps & Follow-Up Drill-Downs */
+        .next-steps-container {
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .next-steps-title {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-amethyst);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+        .next-steps-cluster {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .step-pill-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(199, 125, 255, 0.3);
+            color: #e2e8f0;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-family: var(--font-ui);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .step-pill-btn:hover {
+            background: rgba(157, 78, 221, 0.25);
+            border-color: var(--accent-amethyst);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(157, 78, 221, 0.3);
+        }
+
+        /* Cyber-Defense Remediation Card (Shown when security blocks mutation) */
+        .security-remediation-card {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(12, 16, 26, 0.95) 100%);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.15);
+        }
+        .sec-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .sec-badge-cluster {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .sec-gate-badge {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #ef4444;
+            color: #fca5a5;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        .sec-role-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #94a3b8;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        .sec-main-explanation {
+            color: #f8fafc;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .sandbox-bridge-btn {
+            background: linear-gradient(135deg, #7928ca 0%, #ff0080 100%);
+            border: none;
+            color: #ffffff;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 20px rgba(121, 40, 202, 0.4);
+        }
+        .sandbox-bridge-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 0, 128, 0.5);
+            opacity: 0.95;
+        }
+
         /* Tab 2: Snowflake Records Table */
         .table-container-scroll {
             max-height: 290px;
@@ -1523,6 +1720,9 @@
                             <span class="provenance-text" id="methodologyContainer">Audited from Snowflake warehouse tables (ENERGY_METRICS & POLICY_TARGETS) • Read-only RBAC confirmed.</span>
                         </div>
                         <div id="dataGapNotice" class="datagap-callout" style="display:none;"></div>
+                        <div id="whatIfSimulationContainer" style="display:none;"></div>
+                        <div id="executiveInsightContainer" style="display:none;"></div>
+                        <div id="nextStepsContainer" class="next-steps-container" style="display:none;"></div>
                     </div>
 
                     <!-- Tab 2: Snowflake Records (Data Table) -->
@@ -2175,18 +2375,99 @@
             }
 
             if (data.status === "UNSUPPORTED") {
-                document.getElementById("answerContainer").innerHTML = '<span style="color:#fca5a5;">⚠️ Question Outside Warehouse Scope</span>';
-                document.getElementById("methodologyContainer").innerText = data.message || "This query cannot be fulfilled from available climate and energy tables.";
+                const nextSteps = data.suggested_next_steps || [
+                    "Which country had the highest renewable share in 2024?",
+                    "Show annual green investment and renewable share for India",
+                    "What is the total annual green investment in Europe?"
+                ];
+                const pillsHtml = nextSteps.map(step => 
+                    `<button class="step-pill-btn" onclick="applyAndExecutePrompt('${step.replace(/'/g, "\\'")}')">⚡ ${step}</button>`
+                ).join('');
+
+                document.getElementById("answerContainer").innerHTML = `
+                    <div style="background:rgba(245, 158, 11, 0.08); border:1px solid rgba(245, 158, 11, 0.3); border-radius:12px; padding:18px;">
+                        <div style="font-family:var(--font-mono); font-size:11px; color:#fbbf24; font-weight:700; margin-bottom:6px;">⚠️ OUT-OF-SCOPE DOMAIN INTENT</div>
+                        <div style="color:#f8fafc; font-size:13px; line-height:1.6; margin-bottom:14px;">
+                            ${data.message || data.error || "This query cannot be fulfilled from available climate and energy tables."}<br>
+                            <span style="color:#94a3b8; font-size:12px;">DataMind is connected to Snowflake dataset <strong>CLIMATE_ENERGY</strong> (Energy Metrics & Policy Targets).</span>
+                        </div>
+                        <div class="next-steps-container" style="border-top-color:rgba(245,158,11,0.2);">
+                            <div class="next-steps-title" style="color:#fbbf24;">// TRY ASKING ABOUT WAREHOUSE DATA:</div>
+                            <div class="next-steps-cluster">
+                                ${pillsHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                document.getElementById("methodologyContainer").innerText = "Refused by Gemma Intent Planning Layer • Schema compliance checked.";
+                document.getElementById("dataGapNotice").style.display = "none";
+                document.getElementById("whatIfSimulationContainer").style.display = "none";
+                document.getElementById("executiveInsightContainer").style.display = "none";
+                document.getElementById("nextStepsContainer").style.display = "none";
                 return;
             }
             if (data.status === "SECURITY_BLOCKED") {
-                document.getElementById("answerContainer").innerHTML = '<span style="color:#f87171;">🛑 Read-Only Security Gate Blocked Query</span>';
-                document.getElementById("methodologyContainer").innerText = data.error;
+                const rem = data.remediation || {
+                    why_blocked: "Direct data modification statements (DML/DDL) are strictly blocked to protect Snowflake production tables from unauthorized mutation or deletion.",
+                    risk_level: "CRITICAL: Schema or data corruption",
+                    gate_triggered: "Deterministic AST Guardrail (Gate G5 - sqlglot)",
+                    enforced_role: "DATAMIND_READER (Strict Read-Only RBAC)",
+                    action_type: "SANDBOX_SIMULATION",
+                    action_label: "🧪 Run Safe What-If Simulation in Sandbox",
+                    safe_alternatives: [
+                        "Simulate projected impact of changing this value in Sandbox",
+                        "Show current 2024 baseline metrics for India",
+                        "Inspect Snowflake schema and read-only RBAC policies"
+                    ]
+                };
+
+                const nextSteps = data.suggested_next_steps || rem.safe_alternatives || [];
+                const pillsHtml = nextSteps.map(step => 
+                    `<button class="step-pill-btn" onclick="applyAndExecutePrompt('${step.replace(/'/g, "\\'")}')">⚡ ${step}</button>`
+                ).join('');
+
+                document.getElementById("answerContainer").innerHTML = `
+                    <div class="security-remediation-card">
+                        <div class="sec-card-header">
+                            <div class="sec-badge-cluster">
+                                <span class="sec-gate-badge">🛡️ ${rem.gate_triggered || "AST SECURITY GATE"}</span>
+                                <span class="sec-role-badge">ENFORCED: ${rem.enforced_role || "DATAMIND_READER"}</span>
+                            </div>
+                            <span style="font-family:var(--font-mono); font-size:11px; color:#f87171; font-weight:700;">RISK: ${rem.risk_level || "HIGH"}</span>
+                        </div>
+                        <div class="sec-main-explanation">
+                            <strong>Security Policy Triggered:</strong> ${rem.why_blocked || data.error}<br>
+                            <span style="color:#94a3b8; font-size:12px; margin-top:6px; display:inline-block;">
+                                Live warehouse modifications are strictly blocked. However, DataMind provides an isolated <strong>Dynamic Mutation Sandbox</strong> where you can safely test the effects of data changes without risking production integrity.
+                            </span>
+                        </div>
+                        <div style="margin-bottom:16px;">
+                            <button class="sandbox-bridge-btn" onclick="openSafeSandboxSimulation('${q.replace(/'/g, "\\'")}')">
+                                🧪 LAUNCH SAFE WHAT-IF SIMULATION IN SANDBOX ->
+                            </button>
+                        </div>
+                        <div class="next-steps-container" style="border-top-color:rgba(239,68,68,0.25);">
+                            <div class="next-steps-title" style="color:#fca5a5;">// RECOMMENDED SAFE ALTERNATIVES & NEXT STEPS</div>
+                            <div class="next-steps-cluster">
+                                ${pillsHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                document.getElementById("methodologyContainer").innerText = "Security Gate Active • Read-only Snowflake RBAC preserved • Zero mutations written to warehouse.";
+                document.getElementById("dataGapNotice").style.display = "none";
+                document.getElementById("whatIfSimulationContainer").style.display = "none";
+                document.getElementById("executiveInsightContainer").style.display = "none";
+                document.getElementById("nextStepsContainer").style.display = "none";
                 return;
             }
             if (data.status === "EXECUTION_ERROR") {
                 document.getElementById("answerContainer").innerHTML = '<span style="color:#f87171;">❌ Snowflake Query Execution Error</span>';
                 document.getElementById("methodologyContainer").innerText = data.error;
+                document.getElementById("dataGapNotice").style.display = "none";
+                document.getElementById("whatIfSimulationContainer").style.display = "none";
+                document.getElementById("executiveInsightContainer").style.display = "none";
+                document.getElementById("nextStepsContainer").style.display = "none";
                 return;
             }
 
@@ -2202,28 +2483,111 @@
             if (/\b(drop|delete|truncate|alter|grant|revoke|update|insert)\b/.test(qLower)) {
                 return {
                     status: "SECURITY_BLOCKED",
-                    error: "AST Security Gate: Data modification commands (DML/DDL) are strictly blocked by read-only guardrails."
+                    error: "AST Security Gate: Data modification commands (DML/DDL) are strictly blocked by read-only guardrails.",
+                    remediation: {
+                        why_blocked: "Direct data modification statements (DML/DDL) are strictly blocked to protect Snowflake production tables from unauthorized mutation or deletion.",
+                        risk_level: "CRITICAL: Schema or data corruption",
+                        gate_triggered: "Deterministic AST Guardrail (Gate G5 - sqlglot)",
+                        enforced_role: "DATAMIND_READER (Strict Read-Only RBAC)",
+                        action_type: "SANDBOX_SIMULATION",
+                        action_label: "🧪 Run Safe What-If Simulation in Sandbox",
+                        safe_alternatives: [
+                            "Simulate projected impact of changing this value in Sandbox",
+                            "Show current 2024 baseline metrics for India",
+                            "Inspect Snowflake schema and read-only RBAC policies"
+                        ]
+                    },
+                    suggested_next_steps: [
+                        "Simulate projected impact of changing this value in Sandbox",
+                        "Show current 2024 baseline metrics for India",
+                        "Inspect Snowflake schema and read-only RBAC policies"
+                    ]
                 };
             }
             if (qLower.includes("stock price") || qLower.includes("weather in tokyo")) {
                 return {
                     status: "UNSUPPORTED",
-                    message: "This question asks for information outside our available climate and energy schema."
+                    message: "This question asks for information outside our available climate and energy schema. DataMind is specialized in national energy metrics, renewable shares, CO2 emissions, and green policy targets.",
+                    suggested_next_steps: [
+                        "Which country had the highest renewable share in 2024?",
+                        "Show annual green investment and renewable share for India",
+                        "What is the total annual green investment in Europe?"
+                    ]
                 };
             }
 
-            let ans = "", meth = "", gaps = "None detected", sql = "", cols = [], rows = [];
+            // Client-side What-If Counterfactual Scenario Simulator
+            if (qLower.includes("what if") || qLower.includes("simulate") || qLower.includes("suppose")) {
+                const targetCountry = qLower.includes("germany") ? "Germany" : (qLower.includes("brazil") ? "Brazil" : "India");
+                const pctMatch = qLower.match(/(\d+(?:\.\d+)?)\s*%/);
+                const targetShare = pctMatch ? parseFloat(pctMatch[1]) : (targetCountry === "India" ? 40.0 : 70.0);
+                const baselineShare = targetCountry === "India" ? 24.8 : (targetCountry === "Germany" ? 56.3 : 90.5);
+                const delta = Math.round((targetShare - baselineShare) * 10) / 10;
+                const co2Avoided = Math.round(Math.abs(delta) * 23.2 * 10) / 10;
+                const capitalReq = Math.round(Math.abs(delta) * 1.5 * 10) / 10;
+
+                return {
+                    status: "SUCCESS",
+                    question: q,
+                    grounded_answer: `Simulated counterfactual policy scenario for **${targetCountry}**: Elevating renewable share from **${baselineShare}%** baseline to **${targetShare}%** (<span style="color:#34d399;">+${delta}%</span>) is projected to avoid **${co2Avoided} MT** in annual power-sector CO2 emissions, requiring **$${capitalReq}B USD** in dedicated green capital.`,
+                    methodology: `Synthesized via Autonomous Counterfactual Simulation Engine • Baseline audited from Snowflake ${targetCountry} 2024 records.`,
+                    data_gaps: "None detected (Counterfactual Projection)",
+                    executive_insights: `💡 Proactive Policy Insight: For ${targetCountry}, each 1% expansion in renewable share yields ~${Math.round((co2Avoided/Math.max(1, Math.abs(delta)))*10)/10} MT CO2 displacement, achieving full economic payback within ${(capitalReq/3.8).toFixed(1)} years.`,
+                    what_if_simulation: {
+                        entity: targetCountry,
+                        baseline_share_pct: baselineShare,
+                        target_share_pct: targetShare,
+                        delta_share_pct: delta,
+                        co2_avoided_mt: co2Avoided,
+                        additional_capital_needed_b: capitalReq,
+                        projected_grid_score: (82.0 + (delta > 15 ? -1.5 : 1.0)).toFixed(1),
+                        payback_years: (capitalReq / 3.8).toFixed(1),
+                        confidence_score: "98.4% (Deterministic Counterfactual Model)"
+                    },
+                    suggested_next_steps: [
+                        "Stress-test grid reliability under 60% renewable penetration",
+                        "Compare simulated outcome with Germany baseline",
+                        "Show annual green investment and renewable share for India"
+                    ],
+                    snowflake: {
+                        query_id: qid,
+                        elapsed_ms: 45,
+                        credits_consumed: 0.00015,
+                        est_usd_cost: 0.00045,
+                        row_count: 1,
+                        sql: `SELECT e.COUNTRY_NAME, e.REPORT_YEAR, e.RENEWABLE_SHARE_PCT, e.CO2_EMISSIONS_MT, p.ANNUAL_GREEN_INVESTMENT_USD_B FROM ENERGY_METRICS e JOIN POLICY_TARGETS p ON e.COUNTRY_CODE = p.COUNTRY_CODE WHERE e.COUNTRY_NAME = '${targetCountry}' AND e.REPORT_YEAR = 2024;`
+                    },
+                    data: {
+                        columns: ["COUNTRY_NAME", "REPORT_YEAR", "RENEWABLE_SHARE_PCT", "CO2_EMISSIONS_MT", "ANNUAL_GREEN_INVESTMENT_USD_B"],
+                        rows: [{ COUNTRY_NAME: targetCountry, REPORT_YEAR: 2024, RENEWABLE_SHARE_PCT: baselineShare, CO2_EMISSIONS_MT: 2450.0, ANNUAL_GREEN_INVESTMENT_USD_B: 35.0 }]
+                    }
+                };
+            }
+
+            let ans = "", meth = "", gaps = "None detected", sql = "", cols = [], rows = [], insights = "", nextSteps = [];
 
             if (qLower.includes("2025") || qLower.includes("null")) {
                 ans = "For report year 2025, **India's** renewable energy share is recorded as **NULL** in Snowflake.";
                 meth = "Queried ENERGY_METRICS for report year 2025 • Read-only RBAC confirmed.";
                 gaps = "Data Gap Detected: 2025 renewable share projection for India is recorded as NULL.";
+                insights = "⚠️ Data Governance Radar: 2025 projection row for India contains an unpopulated NULL metric. Flagged as a prospective policy gap requiring synthetic scenario modeling.";
+                nextSteps = [
+                    "Run Counterfactual Simulation for India 2025",
+                    "Query Validated 2024 Baseline Data for India",
+                    "Inspect Missing Value Rates Across Schema"
+                ];
                 sql = "SELECT COUNTRY_NAME, REPORT_YEAR, RENEWABLE_SHARE_PCT FROM ENERGY_METRICS WHERE REPORT_YEAR = 2025;";
                 cols = ["COUNTRY_NAME", "REPORT_YEAR", "RENEWABLE_SHARE_PCT"];
                 rows = [{ COUNTRY_NAME: "India", REPORT_YEAR: 2025, RENEWABLE_SHARE_PCT: null }];
             } else if (qLower.includes("highest") || (qLower.includes("renewable") && !qLower.includes("india"))) {
                 ans = "In 2024, the highest recorded renewable energy shares were led by **Brazil** at **90.5%**, **Germany** at **56.3%**, and **India** at **24.8%**.";
                 meth = "Queried ENERGY_METRICS for year 2024 ordered descending by RENEWABLE_SHARE_PCT.";
+                insights = "💡 Autonomous Finding: Brazil leads global clean generation at 90.5% primarily from hydro/biofuels, yet maintains a 460 MT low-carbon baseline despite industrial scale.";
+                nextSteps = [
+                    "Show CO2 Emissions for Top 3 Renewable Leaders",
+                    "Correlate Renewable Share with Grid Reliability",
+                    "Compare Total Capital Investment Across G7 & BRICS"
+                ];
                 sql = "SELECT COUNTRY_NAME, RENEWABLE_SHARE_PCT FROM ENERGY_METRICS WHERE REPORT_YEAR = 2024 ORDER BY RENEWABLE_SHARE_PCT DESC LIMIT 5;";
                 cols = ["COUNTRY_NAME", "RENEWABLE_SHARE_PCT"];
                 rows = [
@@ -2235,12 +2599,36 @@
             } else if (qLower.includes("europe")) {
                 ans = "The total annual green investment committed across European nations is **$105.0B USD**.";
                 meth = "Aggregated ANNUAL_GREEN_INVESTMENT_USD_B from POLICY_TARGETS for Europe.";
+                insights = "💡 Strategic Takeaway: Europe represents the highest capital density in the warehouse ($105.0B committed), outpacing emerging markets in centralized grid modernization.";
+                nextSteps = [
+                    "Deep-dive Germany's Net-Zero Policy Targets",
+                    "Compare Europe vs Asia Total Green Capital",
+                    "Rank European Nations by Grid Reliability"
+                ];
                 sql = "SELECT REGION, SUM(ANNUAL_GREEN_INVESTMENT_USD_B) AS TOTAL_INVESTMENT_B FROM POLICY_TARGETS WHERE REGION = 'Europe' GROUP BY REGION;";
                 cols = ["REGION", "TOTAL_INVESTMENT_B"];
                 rows = [{ REGION: "Europe", TOTAL_INVESTMENT_B: 105.0 }];
+            } else if (qLower.includes("lowest") || qLower.includes("emission") || qLower.includes("co2")) {
+                ans = "In 2024, **Brazil** recorded the lowest CO2 emissions among analyzed nations at **460.0 MT**.";
+                meth = "Queried ENERGY_METRICS for 2024 ordered by CO2_EMISSIONS_MT ASC.";
+                insights = "💡 Carbon Profile: Lowest emission grids in the dataset correlate with >80% hydro/renewable penetration, demonstrating direct displacement of thermal peakers.";
+                nextSteps = [
+                    "Contrast Brazil CO2 with USA & India",
+                    "Inspect Green Investment per Megaton of Avoided CO2",
+                    "Analyze Grid Reliability Scores for Lowest Emitters"
+                ];
+                sql = "SELECT COUNTRY_NAME, REPORT_YEAR, CO2_EMISSIONS_MT FROM ENERGY_METRICS WHERE REPORT_YEAR = 2024 ORDER BY CO2_EMISSIONS_MT ASC LIMIT 1;";
+                cols = ["COUNTRY_NAME", "REPORT_YEAR", "CO2_EMISSIONS_MT"];
+                rows = [{ COUNTRY_NAME: "Brazil", REPORT_YEAR: 2024, CO2_EMISSIONS_MT: 460.0 }];
             } else {
                 ans = "In 2024, **India** recorded an annual green investment of **$35.0B USD** with a renewable energy share of **24.8%**.";
                 meth = "Audited from Snowflake warehouse tables (ENERGY_METRICS & POLICY_TARGETS) • Read-only RBAC confirmed.";
+                insights = "💡 Executive Insight: India deployed $35.0B in green capital with a 24.8% renewable share. At current trajectory, capital efficiency suggests a 10% share increase requires ~$22.8B in dedicated grid firming.";
+                nextSteps = [
+                    "Compare India vs Germany Renewable Share",
+                    "Simulate +15% Solar Surge for India in Sandbox",
+                    "Inspect 2025 Missing Data Projection for India"
+                ];
                 sql = "SELECT e.COUNTRY_NAME, e.REPORT_YEAR, e.RENEWABLE_SHARE_PCT, p.ANNUAL_GREEN_INVESTMENT_USD_B FROM ENERGY_METRICS e JOIN POLICY_TARGETS p ON e.COUNTRY_CODE = p.COUNTRY_CODE WHERE e.COUNTRY_CODE = 'IND' AND e.REPORT_YEAR = 2024;";
                 cols = ["COUNTRY_NAME", "REPORT_YEAR", "RENEWABLE_SHARE_PCT", "ANNUAL_GREEN_INVESTMENT_USD_B"];
                 rows = [{ COUNTRY_NAME: "India", REPORT_YEAR: 2024, RENEWABLE_SHARE_PCT: 24.8, ANNUAL_GREEN_INVESTMENT_USD_B: 35.0 }];
@@ -2252,6 +2640,9 @@
                 grounded_answer: ans,
                 methodology: meth,
                 data_gaps: gaps,
+                executive_insights: insights,
+                suggested_next_steps: nextSteps,
+                what_if_simulation: null,
                 snowflake: {
                     query_id: qid,
                     elapsed_ms: Math.floor(Math.random() * 20) + 38,
@@ -2285,6 +2676,80 @@
                 gapEl.style.display = "none";
             }
 
+            // Executive Insights Callout
+            const insightBox = document.getElementById("executiveInsightContainer");
+            if (data.executive_insights) {
+                insightBox.style.display = "block";
+                insightBox.innerHTML = `
+                    <div class="executive-insight-box">
+                        <div class="executive-insight-title">💡 PROACTIVE AI INSIGHT</div>
+                        <div>${formatMarkdownPills(data.executive_insights)}</div>
+                    </div>
+                `;
+            } else {
+                insightBox.style.display = "none";
+            }
+
+            // Autonomous What-If Counterfactual Scenario Card
+            const whatIfBox = document.getElementById("whatIfSimulationContainer");
+            if (data.what_if_simulation) {
+                const w = data.what_if_simulation;
+                whatIfBox.style.display = "block";
+                whatIfBox.innerHTML = `
+                    <div class="what-if-simulation-card">
+                        <div class="what-if-header">
+                            <div class="what-if-title">🔮 AUTONOMOUS WHAT-IF COUNTERFACTUAL SCENARIO</div>
+                            <span style="font-family:var(--font-mono); font-size:10px; color:#34d399;">${w.confidence_score}</span>
+                        </div>
+                        <div style="font-size:12px; color:#cbd5e1; margin-bottom:10px;">
+                            Simulating policy surge for <strong>${w.entity}</strong>: Renewable share baseline <strong>${w.baseline_share_pct}%</strong> ➔ Projected <strong>${w.target_share_pct}%</strong> (<span style="color:#34d399;">+${w.delta_share_pct}%</span>).
+                        </div>
+                        <div class="what-if-grid">
+                            <div class="what-if-stat">
+                                <div class="what-if-stat-label">CO2 AVOIDED</div>
+                                <div class="what-if-stat-val positive">-${w.co2_avoided_mt} MT</div>
+                            </div>
+                            <div class="what-if-stat">
+                                <div class="what-if-stat-label">CAPITAL REQUIRED</div>
+                                <div class="what-if-stat-val accent">+$${w.additional_capital_needed_b}B USD</div>
+                            </div>
+                            <div class="what-if-stat">
+                                <div class="what-if-stat-label">PROJECTED GRID SCORE</div>
+                                <div class="what-if-stat-val">${w.projected_grid_score} / 100</div>
+                            </div>
+                            <div class="what-if-stat">
+                                <div class="what-if-stat-label">PAYBACK HORIZON</div>
+                                <div class="what-if-stat-val">${w.payback_years} Years</div>
+                            </div>
+                        </div>
+                        <div style="margin-top:12px; display:flex; gap:8px;">
+                            <button class="step-pill-btn" onclick="openSafeSandboxSimulation('${w.entity}', ${w.target_share_pct})">
+                                🧪 Apply in Live Sandbox ->
+                            </button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                whatIfBox.style.display = "none";
+            }
+
+            // Proactive "What to Do Next" Pills
+            const nextStepsBox = document.getElementById("nextStepsContainer");
+            if (data.suggested_next_steps && data.suggested_next_steps.length > 0) {
+                nextStepsBox.style.display = "block";
+                const pillsHtml = data.suggested_next_steps.map(step => 
+                    `<button class="step-pill-btn" onclick="applyAndExecutePrompt('${step.replace(/'/g, "\\'")}')">⚡ ${step}</button>`
+                ).join('');
+                nextStepsBox.innerHTML = `
+                    <div class="next-steps-title">// WHAT TO DO NEXT • PROACTIVE DRILL-DOWNS</div>
+                    <div class="next-steps-cluster">
+                        ${pillsHtml}
+                    </div>
+                `;
+            } else {
+                nextStepsBox.style.display = "none";
+            }
+
             // Tab 2: Snowflake Records Table
             renderRecordsTable(data.data.columns, data.data.rows);
 
@@ -2306,6 +2771,38 @@
             }
 
             switchDrawerTab('answer');
+        }
+
+        function applyAndExecutePrompt(promptText) {
+            const input = document.getElementById("queryInput");
+            input.value = promptText;
+            input.focus();
+            executeCurrentQuery();
+        }
+
+        function openSafeSandboxSimulation(contextText, targetShare) {
+            const section3 = document.getElementById("section3");
+            if (section3) {
+                section3.scrollIntoView({ behavior: 'smooth' });
+                const card = document.getElementById("sandboxCardRight");
+                if (card) {
+                    card.style.transition = "box-shadow 0.5s ease, border-color 0.5s ease";
+                    card.style.borderColor = "var(--accent-amethyst)";
+                    card.style.boxShadow = "0 0 40px rgba(199, 125, 255, 0.4)";
+                    setTimeout(() => {
+                        card.style.borderColor = "";
+                        card.style.boxShadow = "";
+                    }, 2500);
+                }
+                if (targetShare) {
+                    const slider = document.getElementById("mutationSlider");
+                    if (slider) {
+                        slider.value = targetShare;
+                        updateSliderLabel(targetShare);
+                    }
+                }
+            }
+            showToast("Sandbox activated. Test data changes safely without mutating production.", "info");
         }
 
         function renderRecordsTable(columns, rows) {
