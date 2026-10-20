@@ -238,3 +238,35 @@ Run anytime via `.venv/bin/python3 eval/run_benchmark.py`:
 - **Gate G4 (Data Disclosure):** Climate indicators derived from Our World in Data (CC BY 4.0) and TPC-H SF1 sample benchmark data disclosed and attributed.
 - **Gate G5 (No Secrets Stored):** Strict `.gitignore` prevents committing `.env`, API keys, or Snowflake passwords.
 - **Problem Statement 1 Requirements (P1–P3):** Snowflake and Gemma integrated in distinct roles; live question-time computation with verifiable evidence and AST read-only enforcement.
+
+---
+
+## 7. Next-Generation Autonomous Features & Event-Winning Differentiators (Why DataMind Wins Grand Prize)
+
+### A. Proactive "What to Do Next" & Contextual Follow-Up Engine
+- **The Problem in Legacy Systems:** Ordinary Text-to-SQL tools answer a query and immediately stall, forcing the user to invent their next prompt with zero domain visibility.
+- **The DataMind Solution:** Every single interaction—whether a successful aggregate, a security refusal, or an out-of-domain query—dynamically generates **3 high-impact, contextual follow-up pills**.
+- **Interactive Execution:** Clicking any follow-up pill instantly populates the search bar and triggers execution with smooth visual state transitions.
+
+### B. Cyber-Defense Remediation Cards (Bridging Security & Utility)
+- **The Problem in Legacy Systems:** When a user issues a data mutation (`UPDATE`, `DELETE`, `DROP`), traditional systems spit out an abrupt, hostile red error with zero explanation of what went wrong or how to accomplish their business objective safely.
+- **The DataMind Solution:**
+  1. Displays an interactive **Security Incident & Remediation Card** detailing:
+     - The triggered gate (`Deterministic AST Guardrail - Gate G5 / sqlglot`).
+     - The enforced role (`DATAMIND_READER - Strict Read-Only RBAC`).
+     - The threat risk level (`CRITICAL: Warehouse State Mutation`).
+  2. Offers an instant one-click remediation action:
+     `[ 🧪 LAUNCH SAFE WHAT-IF SIMULATION IN SANDBOX -> ]`
+     This smoothly bridges the user directly into Section 3's isolated mutation sandbox, empowering them to test the business outcome of their change without compromising warehouse immutability.
+  3. Recommends safe read-only prompts to query baseline figures safely.
+
+### C. Autonomous "What-If" Counterfactual Scenario Forecaster
+- When users ask speculative questions (*"What if India increases its renewable share to 40%?"* or *"Simulate a 20% surge in clean energy"*):
+  1. **Grounds in Live Baseline:** Executes Snowflake SQL to pull verified 2024 baseline numbers (`India: 24.8% share, 2,450 MT CO2, $35.0B USD`).
+  2. **Applies Verified Physical Model:** Computes annual CO2 avoided (`-353.8 MT`), additional capital expenditure required (`+$22.8B USD`), grid stability score impact (`80.5 / 100`), and economic payback horizon (`6.0 Years`).
+  3. **Renders Counterfactual Visuals:** Displays a specialized Cyan/Violet comparative card with one-click sandbox testing.
+
+### D. Senior Defense Script: "What makes DataMind a Next-Generation AI system rather than a wrapper?"
+> **Viva Defense Answer:**  
+> *"Traditional AI tools are passive translators: you pass text, they emit SQL, and they stop. DataMind is an autonomous data copilot. First, it anticipates executive decision-making by proactively recommending context-aware 'What to Do Next' drill-downs and surfacing non-obvious anomaly radar insights. Second, when a user attempts an unauthorized mutation, instead of a dead-end error, DataMind transforms the block into a constructive safe simulation, guiding the user to our isolated What-If sandbox. Third, our Autonomous Counterfactual Forecaster allows policymakers to test future scenarios against live Snowflake baselines with verifiable mathematical projections and cryptographic provenance."*
+
